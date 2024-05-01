@@ -1,0 +1,2 @@
+# A `.gitattributes` file which reclassifies `.yml` files as Yaml:
+*.yml linguist-language=Yaml
