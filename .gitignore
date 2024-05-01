@@ -1,0 +1,3 @@
+# Specifies intentionally untracked files that Git should ignore. Files already tracked by Git are not affected. 
+# Dot-hidden on Unix-like systems
+assets/*
