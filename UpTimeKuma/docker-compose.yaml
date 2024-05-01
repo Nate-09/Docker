@@ -1,0 +1,21 @@
+version: '3'
+services:
+  uptimekuma:
+    image: louislam/uptime-kuma:latest
+    container_name: uptimekuma
+    #ports:
+      #- 3001:3001
+    volumes:
+      - uptimekuma-data:/app/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+
+volumes:
+
+  uptimekuma-data:
+    driver: local
+    
+networks:
+  default:
+    external: true
+    name: nginxproxymanager_default
